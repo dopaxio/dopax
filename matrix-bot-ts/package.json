@@ -1,0 +1,22 @@
+{
+  "name": "matrix-agent-ts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A minimal TypeScript Matrix agent runtime built with matrix-bot-sdk",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "supervisor:start": "tsx src/supervisor/index.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "matrix-bot-sdk": "file:../matrix-bot-sdk"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

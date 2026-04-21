@@ -1,0 +1,51 @@
+{
+    "default_server_config": {
+        "m.homeserver": {
+            "base_url": "https://mx.dopax.io",
+            "server_name": "dopax.io"
+        }
+    },
+    "disable_custom_urls": false,
+    "disable_guests": false,
+    "disable_login_language_selector": false,
+    "disable_3pid_login": false,
+    "force_verification": false,
+    "brand": "Dopax",
+    "web_base_url": "https://dopax.io/chat",
+    "show_labs_settings": false,
+    "features": {},
+    "setting_defaults": {
+        "UIFeature.voip": false
+    },
+    "default_federate": false,
+    "default_theme": "light",
+    "room_directory": {
+        "servers": ["dopax.io"]
+    },
+    "element_call": {
+        "brand": "Element Call"
+    },
+    "desktop_agent": {
+        "enabled": true,
+        "providers": [
+            {
+                "provider": "codex"
+            },
+            {
+                "provider": "claude"
+            },
+            {
+                "provider": "gemini"
+            },
+            {
+                "provider": "copilot"
+            },
+            {
+                "provider": "opencode"
+            }
+        ]
+    },
+    "agent_console": {
+        "api_base_url": "https://plat.dopax.io"
+    }
+}

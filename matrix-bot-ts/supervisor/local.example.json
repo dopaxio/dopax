@@ -1,0 +1,33 @@
+{
+  "mode": "local",
+  "tuwunel": {
+    "name": "tuwunel",
+    "command": [
+      "/absolute/path/to/tuwunel",
+      "--config",
+      "/absolute/path/to/tuwunel.toml"
+    ],
+    "cwd": "..",
+    "restart": true,
+    "restartDelayMs": 2000,
+    "healthcheck": {
+      "url": "http://127.0.0.1:6167/_matrix/client/versions",
+      "intervalMs": 1000,
+      "timeoutMs": 30000,
+      "expectedStatus": 200
+    }
+  },
+  "bots": [
+    {
+      "name": "codex-local",
+      "command": [
+        "node",
+        "dist/index.js"
+      ],
+      "cwd": "..",
+      "envFile": "../instances/codex-tuwunel.env",
+      "restart": true,
+      "restartDelayMs": 2000
+    }
+  ]
+}
